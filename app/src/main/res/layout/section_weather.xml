@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/section_weather_temperature_text"
+        android:gravity="bottom|center_horizontal"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:text="--°"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/section_weather_image_button"
+        android:background="@drawable/weather_nan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/section_weather_time_text"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:text="--:--"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

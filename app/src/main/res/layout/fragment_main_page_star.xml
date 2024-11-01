@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_page_parts.MainPageStar">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/star_page_container_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/mainColor"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="10px"
+            android:paddingLeft="10dp"
+            android:layout_height="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/star_page_profile_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/default_profile_1"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="visitor"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <ImageButton
+                android:id="@+id/star_page_setting_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="#00000000"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_setting_white"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <com.sharesdu.android.components.SimpleItemContainer
+            android:id="@+id/star_page_simple_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.sharesdu.android.components.StarPageNavigationBar
+        android:id="@+id/star_page_setting_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#eeffffff"
+        android:visibility="gone"
+        android:layout_gravity="start" >
+    </com.sharesdu.android.components.StarPageNavigationBar>
+
+</FrameLayout>

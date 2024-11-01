@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="主页"
+        android:icon="@drawable/selector_home_icon" /> <!-- 使用 StateListDrawable -->
+    <item
+        android:id="@+id/menu_message"
+        android:title="信息"
+        android:icon="@drawable/selector_message_icon"/> <!-- 使用 StateListDrawable -->
+    <item
+        android:id="@+id/menu_star"
+        android:title="收藏"
+        android:icon="@drawable/selector_star_icon"/> <!-- 使用 StateListDrawable -->
+</menu>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ShareSdu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weather_widget_description">校区精确天气预报</string>
+</resources>
