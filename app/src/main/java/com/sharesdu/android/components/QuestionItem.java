@@ -14,6 +14,8 @@ import androidx.annotation.Nullable;
 import com.sharesdu.android.PageActivity;
 import com.sharesdu.android.R;
 
+import org.json.JSONObject;
+
 import java.util.Map;
 
 public class QuestionItem extends LinearLayout {
@@ -44,7 +46,14 @@ public class QuestionItem extends LinearLayout {
             @Override
             public void onClick(View view) {
                 Intent tmp=new Intent(context, PageActivity.class);
-                context.startActivity(tmp);
+                JSONObject page_data=new JSONObject();
+                try{
+                    page_data.put("type","question");
+                    tmp.putExtra("page_data",page_data.toString());
+                    context.startActivity(tmp);
+                }catch (Exception e){
+                    return;
+                }
             }
         });
     }

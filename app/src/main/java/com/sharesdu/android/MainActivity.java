@@ -8,9 +8,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.sharesdu.android.components.QuestionEditor;
 import com.sharesdu.android.main_page_parts.MainPageHome;
 import com.sharesdu.android.main_page_parts.MainPageMessage;
 import com.sharesdu.android.main_page_parts.MainPageStar;
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTransaction fragmentTransaction;
     private Fragment last_fragment;
     private long lastBackPressedTime = 0;
+    private ImageButton create_btn;
+    private QuestionEditor question_editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,6 +89,15 @@ public class MainActivity extends AppCompatActivity {
             fragmentTransaction.show(selectedFragment);
             fragmentTransaction.commit();
             return true;
+        });
+        //
+        question_editor=findViewById(R.id.main_activity_question_editor);
+        create_btn=findViewById(R.id.main_activity_create_img_button);
+        create_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                question_editor.setVisibility(View.VISIBLE);
+            }
         });
     }
 

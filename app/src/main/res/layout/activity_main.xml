@@ -28,4 +28,23 @@
             android:layout_height="2px"
             android:background="#8a8a8a"/>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <ImageButton
+        android:id="@+id/main_activity_create_img_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_create"
+        android:scaleType="centerCrop"
+        android:padding="10dp"
+        android:background="@drawable/ripple_circle_button_background_red"/>
+    <com.sharesdu.android.components.QuestionEditor
+        android:id="@+id/main_activity_question_editor"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
